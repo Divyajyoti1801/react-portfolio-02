@@ -1,0 +1,47 @@
+html,body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*::after,*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(114,113,113);
+    border-radius: 1rem;
+    height: 20rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+@media only screen and (max-width:56.25em){
+
+}
+
+@media only screen and (max-width: 50em){
+    
+}
+
+@media only screen and (max-width: 37.5em){
+
+}
+
+
