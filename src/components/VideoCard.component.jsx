@@ -3,11 +3,10 @@ import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-    demoChannelTitle,
-    demoChannelUrl,
-    demoThumbnailUrl,
-    demoVideoTitle,
-    demoVideoUrl,
+  demoChannelTitle,
+  demoChannelUrl,
+  demoVideoTitle,
+  demoVideoUrl,
 } from "../utils/constants";
 
 const VideoCard = ({
@@ -19,7 +18,7 @@ const VideoCard = ({
   return (
     <Card
       sx={{
-        width: { md: "320px", sx: "100%" },
+        width: { sx: "100%", sm: "358px", md: "320px" },
         boxShadow: "none",
         borderRadius: 0,
       }}
@@ -28,7 +27,7 @@ const VideoCard = ({
         <CardMedia
           image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
-          sx={{ width: 358, height: 180 }}
+          sx={{ width: { xs: "100%", sm: "358px", md: "320px" }, height: 180 }}
         />
       </Link>
       <CardContent sx={{ backgroundColor: "#1e1e1e", height: "106px" }}>
